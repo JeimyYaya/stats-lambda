@@ -2,10 +2,9 @@ package edu.eci.stats;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import edu.eci.stats.collections.SinglyLinkedList;
+
 import java.io.InputStream;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -19,7 +18,7 @@ public class StatsApplication {
 
 		for (int c = 1; c <= casos; c++) {
 		    int n = sc.nextInt(); 
-		    List<Double> data = new LinkedList<>();
+		    List<Double> data = new SinglyLinkedList<>();
 
 		    for (int i = 0; i < n; i++) {
 		        data.add(sc.nextDouble());
